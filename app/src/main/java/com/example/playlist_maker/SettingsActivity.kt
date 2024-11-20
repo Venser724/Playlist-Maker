@@ -25,7 +25,6 @@ class SettingsActivity : AppCompatActivity() {
 
         val switchCompat = findViewById<SwitchCompat>(R.id.dark_theme_switch )
         switchCompat.setOnCheckedChangeListener { _, isChecked -> switchCompat.thumbTintMode
-            //when switch is checked, set it's colors to blue/light blue
             if (isChecked) {
                 switchCompat.thumbTintList = getColorStateList(R.color.blue)
                 switchCompat.trackTintList = getColorStateList(R.color.light_blue)
@@ -33,6 +32,8 @@ class SettingsActivity : AppCompatActivity() {
                 switchCompat.thumbTintList = getColorStateList(R.color.gray)
                 switchCompat.trackTintList = getColorStateList(R.color.light_gray)
             }
+
+            //there's gotta to be an easier way to do this, but i could only make it this way
         }
     }
 }
