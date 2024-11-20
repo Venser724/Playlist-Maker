@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="std_padding">16dp</dimen>
+    <dimen name="std_text_size">22sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="button_padding">24dp</dimen>
+    <dimen name="button_height">61dp</dimen>
+    <dimen name="button_width">360dp</dimen>
+</resources>

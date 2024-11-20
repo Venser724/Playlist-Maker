@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="476dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/std_padding"
+
+            android:background="@color/white"
+            android:paddingStart="0dp"
+            android:text="@string/settings"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+
+            app:icon="@drawable/arrow_left"
+            app:iconGravity="start"
+            app:iconTint="@color/black"
+
+            />
+
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="@string/dark_theme"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingStart="0dp"
+        android:text="@string/share_msg"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        app:icon="@drawable/share"
+        app:iconGravity="end"
+        app:iconTint="@color/gray"
+
+        />
+
+    <Button
+        android:id="@+id/support_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingStart="0dp"
+        android:text="@string/support_msg"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        app:icon="@drawable/head"
+        app:iconGravity="end"
+        app:iconTint="@color/gray"
+
+        />
+
+    <Button
+        android:id="@+id/legal_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingStart="0dp"
+        android:text="@string/legal"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        app:icon="@drawable/arrow_right"
+        app:iconGravity="end"
+        app:iconTint="@color/gray"
+
+        />
+</LinearLayout>

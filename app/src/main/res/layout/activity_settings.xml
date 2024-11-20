@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:backgroundTint="@color/white"
+
+            android:drawableStart="@drawable/arrow_left"
+            android:stateListAnimator="@null"
+            android:paddingStart="0dp"
+
+            android:text="@string/settings"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:fontFamily="sans-serif"
+            />
+
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/dark_theme_switch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:checked="false"
+        android:paddingStart="@dimen/std_padding"
+
+        android:text="@string/dark_theme"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+
+        app:switchTextAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+        app:trackTint="@color/light_gray"
+        app:thumbTint="@color/gray"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/support_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/head"
+        android:drawableTint="@color/gray"
+        android:paddingStart="@dimen/std_padding"
+        android:stateListAnimator="@null"
+        android:text="@string/support_msg"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        android:fontFamily="sans-serif"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/legal_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/arrow_right"
+        android:drawableTint="@color/gray"
+        android:paddingStart="@dimen/std_padding"
+        android:stateListAnimator="@null"
+        android:text="@string/legal"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/share"
+        android:drawableTint="@color/gray"
+        android:paddingStart="@dimen/std_padding"
+        android:stateListAnimator="@null"
+        android:text="@string/share_msg"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+
+        />
+
+</LinearLayout>
