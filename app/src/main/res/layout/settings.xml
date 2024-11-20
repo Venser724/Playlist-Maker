@@ -17,7 +17,8 @@
             android:id="@+id/settings_button"
             android:layout_width="match_parent"
             android:layout_height="@dimen/button_height"
-            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/std_padding"
+
             android:background="@color/white"
             android:paddingStart="0dp"
             android:text="@string/settings"
@@ -45,7 +46,6 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="@dimen/small_text_size"
-
         />
 
     <Button

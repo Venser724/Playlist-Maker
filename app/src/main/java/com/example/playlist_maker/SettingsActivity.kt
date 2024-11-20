@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -20,6 +21,18 @@ class SettingsActivity : AppCompatActivity() {
         val backButton = findViewById<Button>(R.id.back_button)
         backButton.setOnClickListener {
             finish()
+        }
+
+        val switchCompat = findViewById<SwitchCompat>(R.id.dark_theme_switch )
+        switchCompat.setOnCheckedChangeListener { _, isChecked -> switchCompat.thumbTintMode
+            //when switch is checked, set it's colors to blue/light blue
+            if (isChecked) {
+                switchCompat.thumbTintList = getColorStateList(R.color.blue)
+                switchCompat.trackTintList = getColorStateList(R.color.light_blue)
+            } else {
+                switchCompat.thumbTintList = getColorStateList(R.color.gray)
+                switchCompat.trackTintList = getColorStateList(R.color.light_gray)
+            }
         }
     }
 }
